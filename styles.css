@@ -41,6 +41,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 3.2rem;
 }
 
 .odinBanner {
@@ -71,6 +72,8 @@ img {
   bottom: 1.2rem;
   font-size: 1.4rem;
 }
+
+
 
 input,
 button,
