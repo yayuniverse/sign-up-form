@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('./fonts/Norse-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 :root {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -23,14 +30,14 @@ body {
 }
 
 .leftSection {
-  width: 40%;
+  width: 35%;
   background-image: url('dandandan.jpg');
   background-size: cover;
   position: relative;
 }
 
 .rightSection {
-  width: 60%;
+  width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,12 +54,14 @@ body {
 }
 
 img {
-  width: 12rem;
+  height: 12rem;
 }
 
 .odinBanner h1 {
+  font-family: 'Norse-Bold', sans-serif;
   display: inline-block;
   font-size: 9.6rem;
+  height: 12rem;
 }
 
 .imgCredit {
@@ -60,6 +69,7 @@ img {
   width: 100%;
   text-align: center;
   bottom: 1.2rem;
+  font-size: 1.4rem;
 }
 
 input,
