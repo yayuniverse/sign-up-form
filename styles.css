@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Norse-Bold';
-  src: url('./fonts/Norse-Bold.otf') format('opentype');
+  font-family: "Norse-Bold";
+  src: url("./fonts/Norse-Bold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
@@ -31,7 +31,7 @@ body {
 
 .leftSection {
   width: 35%;
-  background-image: url('dandandan.jpg');
+  background-image: url("dandandan.jpg");
   background-size: cover;
   position: relative;
 }
@@ -43,6 +43,8 @@ body {
   justify-content: center;
   gap: 3.2rem;
 }
+
+/* Start of leftSection internals */
 
 .odinBanner {
   display: flex;
@@ -59,7 +61,7 @@ img {
 }
 
 .odinBanner h1 {
-  font-family: 'Norse-Bold', sans-serif;
+  font-family: "Norse-Bold", sans-serif;
   display: inline-block;
   font-size: 9.6rem;
   height: 12rem;
@@ -73,14 +75,85 @@ img {
   font-size: 1.4rem;
 }
 
+/* Start of rightSection internals */
 
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
+h2 {
+  font-size: 2.8rem;
 }
+
+.rightSection > h2:first-of-type,
+button,
+.rightSection > p:last-of-type {
+  margin-left: 6.4rem;
+}
+
+button {
+  align-self: flex-start;
+  padding: 0.8rem 1.6rem;
+  border-style: none;
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #ae2b24;
+  color: #fff;
+}
+
+form {
+  padding: 2.4rem 6.4rem 4rem;
+  background-color: #ffffff10;
+}
+
+form > div {
+  margin-top: 20px;
+  display: flex;
+  gap: 4rem;
+}
+
+form > div div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 25rem;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: .4rem;
+}
+
+input {
+  height: 2.5rem;
+  padding-left: .8rem;
+}
+
+.rightSection > p:last-of-type {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ae2b24;
+}
+
+input:focus {
+  outline: none;
+  border-color: #273B9E;
+  border-width: .15rem;
+  border-style: solid;
+  border-radius: .3rem / .3rem;
+}
+
+input[type="password"]:invalid {
+  border-color: #ae2b24;
+  border-width: .1rem;
+  border-style: solid;
+  border-radius: .3rem / .3rem;
+}
+
+
+
 
 p,
 h1,
